@@ -1,0 +1,444 @@
+/* === Reset === */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    /* color: #0000008C; */
+}
+
+
+/* === Gerais === */
+body {
+    background-color: #80808029;
+}
+
+header, main, footer, section {
+    width: 100%;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+
+
+/* === Cabeçalho === */
+header {
+    height: 55px;
+    background-color: #FFFFFF;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header img {
+    width: 32px;
+    height: 32px;    
+}
+
+header h1 {
+    font-size: 24px;
+    color: #5D15D1;
+    padding-left: 10px;
+}
+
+
+
+/* === Corpo === */
+
+/* === Seção Formulário ===*/
+.formulario {
+    background-image: url(../imagens/bahia.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
+
+.formulario .formulario-titulo {
+    width: 100%;
+    height: 35px;
+    background-color: #5D15D1; 
+    display: flex;   
+    align-items: center;
+    justify-content: center;    
+}
+
+.formulario .formulario-titulo img {
+    width: 20px;
+    height: 20px;
+    rotate: -45deg;
+}
+
+.formulario .formulario-titulo h2 {
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-left: 5px;
+}
+
+.formulario .formulario-form {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 30px 25px 20px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario .formulario-form h3{
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+.formulario .formulario-form label {    
+    font-size: 16px;    
+}
+
+.formulario .formulario-form input {
+    width: 100%;
+    height: 32px;
+    padding: 0 5px;
+    margin: 10px 0;
+}
+
+.formulario .formulario-form select {
+    padding: 0 3px;
+    width: 100%;
+    height: 32px;
+    margin: 10px 0;
+    background-color: #FFFFFF;
+}
+
+.formulario .formulario-form fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.formulario .formulario-form  fieldset span  {
+    width: 100%;
+    display: block;
+    /* margin: 10px 0 */
+}
+
+.formulario .formulario-form fieldset input {
+    width: auto;    
+    height: 32px;
+    margin-right: 5px;
+}
+
+.formulario .formulario-form fieldset label {
+    width: auto;
+    margin-right: 15px;
+}
+
+.formulario .formulario-form .metade {
+    width: 50%;
+    float: left;
+}
+
+.formulario .formulario-form .metade:nth-of-type(odd) {
+    padding-right: 12px;
+}
+
+.formulario .formulario-form .metade:nth-of-type(even) {
+    padding-left: 12px;
+}
+
+.formulario .formulario-form button {
+    width: 160px;
+    height: 32px;
+    background-color: #5D15D1;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+
+
+/* === Seção Ofertas e Anuncios === */
+
+.ofertas .container,
+.anuncios .container {
+    margin-top: 32px;
+}
+
+.ofertas h2,
+.anuncios h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ofertas p,
+.anuncios p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.ofertas .cards,
+.anuncios .cards {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;  
+    justify-content: space-between;  
+    gap: 20px;
+}
+
+
+.ofertas .cards .card-grande {
+    width: calc(50% - 10px); 
+    height: 100%;
+    overflow: hidden;    
+}
+
+.ofertas .cards .card-pequeno {
+    width: calc(25% - 10px);    
+    height: calc(50% - 10px);
+    overflow: hidden;
+}
+
+.ofertas .card-grande figure,
+.ofertas .card-pequeno figure {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    align-items: center;
+    overflow: hidden;   
+
+}
+
+.ofertas .card-grande figure img,
+.ofertas .card-pequeno figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ofertas .card-grande figure figcaption,
+.ofertas .card-pequeno figure figcaption {
+    background-color: rgb(0, 0, 0, 50%);
+    width: 100%;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 17px;
+    color: #FFFFFF;    
+}
+
+.anuncios .cards {
+    gap: 10px;
+}
+
+.anuncios .cards .card-anuncio {
+    width: calc(50% - 10px); 
+    height: 100%;
+    overflow: hidden;    
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.anuncios .cards .card-anuncio figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.anuncios .cards .card-anuncio figure  img{
+    width: 100%;
+    height: 100%;
+}
+
+.anuncios .cards .card-anuncio h3 {
+    width: 100%;
+    text-align: left;
+    background-color: #FFFFFF;
+    padding: 20px 20px 0 20px;
+    font-size: 16px;
+}
+
+.anuncios .cards .card-anuncio p {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 15px 20px 20px 20px;
+    color:grey;
+}
+
+
+
+/* === Rodape === */
+footer {
+    background-color: #5D15D1;
+    color: #FFFFFF;
+    margin-top: 32px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .contato,
+footer .container .redes-sociais {
+    width: auto;
+    height: 100%;
+    margin: 15px 0;
+}
+
+footer .container .contato h2,
+footer .container .redes-sociais h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+footer .container .contato ul,
+footer .container .redes-sociais ul {
+    list-style-type: none;    
+}
+
+footer .container .contato ul li,
+footer .container .redes-sociais ul li {
+    vertical-align: middle;
+    margin: 5px 0;
+}
+
+footer .container .contato ul li img,
+footer .container .redes-sociais ul li img {
+    width: 18px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+
+
+
+/* === Responsividade === */
+/* mobile */
+@media only screen and
+(max-width: 540px) {
+    .container {
+        width: 90%;
+    }
+
+    .formulario .formulario-form .metade {
+        width: 100%;
+        float: left;
+    }
+    .formulario .formulario-form .metade:nth-of-type(odd),     
+    .formulario .formulario-form .metade:nth-of-type(even) {
+        padding: 0;
+    }
+
+    .formulario .formulario-form fieldset {
+        flex-direction: column;        
+        justify-content: left;
+        align-items: center;
+    }
+
+    .formulario .formulario-form fieldset div {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+   
+    .ofertas .cards,
+    .anuncios .cards {        
+        height: 100%;        
+    }   
+
+    .ofertas .cards .card-pequeno,
+    .ofertas .cards .card-grande {
+        width: 100%;
+        height: 225px;
+        margin-top: 15px;
+    }
+
+    .anuncios .cards .card-anuncio {
+        width: 100%;
+        margin-top: 15px;
+        margin-right: 0;
+    }
+
+    footer .container {
+        flex-direction: column;
+        /* justify-content: center;         */
+    }
+
+    footer .container .contato,
+    footer .container .redes-sociais {
+        width: 250px;
+        margin: 15px auto;
+    }
+
+}
+
+
+/* Tablet */
+@media only screen and
+(min-width: 541px) and (max-width: 768px) {
+
+    .container {
+        width: 90%;
+    }    
+
+    .formulario .formulario-form button {
+        width: 100%;
+    }
+
+    .ofertas .cards,
+    .anuncios .cards {        
+        height: 100%;        
+    }   
+
+    .ofertas .cards .card-pequeno,
+    .ofertas .cards .card-grande {
+        width: 100%;
+        height: 225px;
+        margin-top: 15px;
+    }
+
+    .anuncios .cards .card-anuncio {
+        width: 100%;
+        margin-top: 15px;
+        margin-right: 0;
+    }
+
+    footer .container {
+        flex-direction: column;
+        /* justify-content: center;         */
+    }
+
+    footer .container .contato,
+    footer .container .redes-sociais {
+        width: 250px;
+        margin: 15px auto;
+    }
+}
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1100px) {   
+
+    .container {
+        width: 90%;
+    }
+
+   
+    
+}
+
